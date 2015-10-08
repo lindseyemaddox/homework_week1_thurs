@@ -1,0 +1,117 @@
+$dark: 		#083451;
+$primary: 	#106db3;
+$light:		#a3b3bf;
+$black:		#383838;
+$white:		#ffffff;
+
+
+html {
+  font-size: 16px;
+}
+body {
+  	font-size: 1rem;
+	box-sizing: border-box;
+}
+
+
+
+@mixin openSans() {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@mixin oswald() {
+	font-family: 'Oswald', sans-serif;
+}
+
+
+
+.inner {
+	max-width: 980px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+/*---------------------------------------------HEADER---------------------------------------------*/
+
+
+#logo {
+	float: left; 
+	img {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	h2 {
+		@include openSans();
+		color: $dark;
+		display: inline-block;
+		padding: 0;
+		vertical-align: middle;
+		text-transform: uppercase;
+		font-size: 1em;
+	}
+}
+
+
+header {
+	background: url(../../img/header.jpg) no-repeat center center transparent;
+	background-size: cover;
+	padding: 10px 0 195px;
+	nav {
+		float: right;
+		ul {
+			margin-top: 10px;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				list-style-type: none;
+				@include oswald();
+				text-transform: uppercase;
+				font-size: 1.3em;
+				padding-right: 10px;
+				a {
+					color: $dark;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	h1 {
+		clear: both;
+		color: $white;
+		@include openSans();
+		text-transform: uppercase;
+		font-size: 5em;
+		text-align: center;
+		padding-top: 170px;
+		margin: 0;
+	}
+	p {
+		@include openSans();
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		color: $dark;
+	}
+}
+
+
+/*---------------------------------------------MEAT---------------------------------------------*/
+
+footer {
+	border-top: 1px solid $light;
+	#bottom {
+		background-color: $dark;
+	}
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------FOOTER---------------------------------------------*/
